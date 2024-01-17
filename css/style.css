@@ -26,7 +26,7 @@ ul {
   margin: 0;
   padding-left: 0;
 }
-.img {
+img {
   display: block;
 }
 .div {
@@ -35,6 +35,7 @@ ul {
 .section {
   padding-bottom: 120px;
   padding-top: 120px;
+  margin: 0;
 }
 .container {
   max-width: 1158px;
@@ -42,19 +43,22 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* header  */
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e7e9fc;
+}
 .header-container {
   display: flex;
   width: 1158px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0 15px;
   align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #e7e9fc;
 }
 
 /* logo */
@@ -102,6 +106,7 @@ ul {
   display: flex;
   margin-left: auto;
   gap: 40px;
+  margin-left: auto;
 }
 
 .contact-link {
@@ -168,15 +173,10 @@ ul {
 
 /* advantages */
 
-/* .section-title {
-  color: #2e2f42;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-} */
+.advantages-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 .visually-hidden {
   position: absolute;
@@ -194,8 +194,6 @@ ul {
   display: flex;
   gap: 24px;
   min-width: 264px;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 .advantages-items {
   width: calc((100% - 72px) / 4);
@@ -216,7 +214,7 @@ ul {
 
 /* our Team */
 
-.portfolio-section {
+.team-section {
   padding-bottom: 120px;
   padding-top: 120px;
 }
@@ -248,16 +246,14 @@ ul {
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
 }
-.team-photo {
-  padding-bottom: 32px;
-}
 .our-team-intro {
   display: flex;
-  width: 232px;
+  width: 264px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 8px;
+  padding-top: 32px;
   padding-bottom: 32px;
 }
 .team-title {
@@ -278,7 +274,7 @@ ul {
 
 /* our Portfolio */
 
-.section {
+.portfolio-section {
   padding-bottom: 120px;
   padding-top: 120px;
 }
