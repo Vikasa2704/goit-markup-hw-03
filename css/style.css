@@ -51,8 +51,6 @@ img {
 .header {
   display: flex;
   border-bottom: 1px solid #e7e9fc;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .header-container {
   display: flex;
@@ -61,6 +59,11 @@ img {
   padding: 0 15px;
   align-items: center;
   justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 
 /* logo */
@@ -80,13 +83,14 @@ img {
 .nav-part {
   color: #2e2f42;
 }
-.header-nav,
+.nav-list {
+  gap: 40px;
+}
+
 .nav-list,
 .contact-list {
   display: flex;
   align-items: center;
-  gap: 40px;
-  padding: 24px 0;
 }
 
 .nav-link {
@@ -251,8 +255,6 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 .our-team-intro {
-  display: flex;
-  width: 264px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
